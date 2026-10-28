@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Memory Challenge </title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body style="justify-items: center;background-color: rgb(115, 237, 227);">
+    <h1>🧠 Memory Challenge-Emoji Matching Game</h1>
+    <p style="color: red;font-size: x-large;">Start Matching The Cards....</p>
+    <h3>Select Difficulty</h3>
+    <div class="game-layout">
+    <div class="left-section">
+    <div class="difficulty">
+    <button onclick="changelevel(4)">Easy</button>
+    <button onclick="changelevel(6)">Medium</button>
+    <button onclick="changelevel(8)">Hard</button>
+    </div>
+    <div class="starts">
+    <p>moves:<span id="moves">0</span></p>
+    <p>matched pairs:<span id="matches">0</span>/<span id="totalpairs">4</span></p>
+    <p>time:<span id="timer">0</span>seconds</p>
+    <p>score:<span id="score">100</span></p>
+    <button id="restart">Restart Game</button>
+    </div>
+    </div>
+    <div id="board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
